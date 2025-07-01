@@ -7,8 +7,7 @@ mobile_number = sys.argv[1]
 message = sys.argv[2]
 Count = int(sys.argv[3])
 
-pywhatkit.sendwhatmsg_instantly(f"+91{mobile_number}", message ,wait_time=10)
-time.sleep(8)
+pywhatkit.sendwhatmsg_instantly(f"+91{mobile_number}", message ,wait_time=30)
 pyautogui.press("enter")
 for i in range(Count-1):
     pyautogui.write(message)
